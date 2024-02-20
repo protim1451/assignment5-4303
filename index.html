@@ -1,11 +1,121 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>Bus Ticketing</title>
+    <!-- Daisy UI -->
+    <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
+    <script src="https://cdn.tailwindcss.com"></script>
+
 </head>
+
 <body>
-    
+    <header class="mx-32">
+        <nav class="mt-12">
+            <div class="navbar bg-base-100">
+                <div class="navbar-start">
+                    <a class="btn btn-ghost text-4xl font-bold">P-Ticket</a>
+                </div>
+                <div class="navbar-center lg:flex">
+                    <ul class="menu menu-horizontal px-1">
+                        <li><a>Home</a></li>
+                        <li><a>About</a></li>
+                        <li><a>Destination</a></li>
+                        <li><a>Search</a></li>
+                    </ul>
+                </div>
+                <div class="navbar-end">
+                    <a class="btn bg-[#1DD1001A] border border-[#1DD10066]">
+                        Bus <img src="images/bus-icon.png" alt=""></a>
+                </div>
+            </div>
+        </nav>
+        <div class="bg-[url(images/banner.png)] bg-cover w-full h-[70vh] bg-no-repeat bg-center rounded-lg">
+            <div class="flex gap-7 flex-col justify-center items-center">
+                <h1 class="text-5xl text-white font-bold text-center pt-16">End-to-End Travel with <br><span
+                        class="text-green-500">P Paribahan</span></h1>
+                <p class="text-white text-[18px] text-center">Yes, you can run unit tests and view the results
+                    directly within the app. <br>The integrated testing features allow for a streamlined .</p>
+                <button class="btn bg-[#1DD100]">Buy Tickets</button>
+            </div>
+        </div>
+    </header>
+    <main>
+        <section class="coupon mt-12 mx-32">
+            <h3 class="text-center text-4xl font-semibold">Best offers for you</h3>
+            <div class="mt-10 flex justify-center items-center gap-8">
+                <div class="bg-[#FFBF0F] w-full h-[30vh] rounded-xl flex gap-10 justify-center items-center">
+                    <div class="flex flex-col justify-center items-center ">
+                        <h1 class="text-4xl font-bold">15% OFF</h1>
+                        <p class="text-[20px] font-semibold">on your next purchase</p>
+                        <p class="text-[18px] font-normal">use by January 2024</p>
+                    </div>
+                    
+                    <div class="flex flex-col justify-center items-center border-l-2 border-dashed h-3/4 pl-4">
+                        <h1 class="text-4xl font-semibold">NEW15</h1>
+                        <p class="text-[18px] font-normal">Coupon Code</p>
+                    </div>
+                </div>
+                <div class="bg-[#F78C9C] w-full h-[30vh] rounded-xl flex gap-10 justify-center items-center">
+                    <div class="flex flex-col justify-center items-center ">
+                        <h1 class="text-4xl font-bold">20% OFF</h1>
+                        <p class="text-[20px] font-semibold">on your next purchase</p>
+                        <p class="text-[18px] font-normal">use by January 2024</p>
+                    </div>
+                    
+                    <div class="flex flex-col justify-center items-center border-l-2 border-dashed h-3/4 pl-4">
+                        <h1 class="text-4xl font-semibold">Couple 20</h1>
+                        <p class="text-[18px] font-normal">Coupon Code</p>
+                    </div>
+                </div>
+            </div>
+            <div class="mt-8 flex justify-center items-center">
+                <button class="btn text-green-500 border-green-500">See All Offers</button>
+            </div>
+        </section>
+        <section class="mt-12 bg-[#F7F8F8] border-t-2 border-green-500 rounded-2xl">
+            <h3 class="text-4xl text-center pt-10">P.H Paribahan</h3>
+            <p class="text-[18px] text-center text-[#03071299]">A bus ticketing system streamlines passenger boarding, fare collection, and seat reservation, <br>enhancing efficiency and convenience for travelers.</p>
+        </section>
+        <section class="bus-details bg-[white] mx-32">
+            <div class="mt-5">
+                <div class="flex justify-between">
+                    <div class="flex gap-2">
+                        <img src="images/bus-logo.png" alt="">
+                        <div>
+                            <h3 class="text-3xl font-semibold">Greenline Paribahan</h3>
+                            <p class="text-[18px] font-light text-[#03071299]">Coach-009-WEB ! AC_Business</p>
+                        </div>
+                    </div>
+                    <div class="bg-[#1DD1004C] text-green-600 flex border rounded-lg">
+                        <img src="images/seat-green.png" alt="">
+                        <p id="seats-available">40</p>
+                        <p> Seats left</p>
+                    </div>
+                </div>
+                <div class="bg-[#F7F8F8] mt-6 divide-y-2 divide-dashed flex gap-6 flex-col p-5">
+                    <div class="flex justify-between">
+                        <p class="text-[18px] font-light text-[#03071299]">Route</p>
+                        <p class="text-[18px]">Dhaka - Sylhet</p>
+                    </div>
+                    <div class="flex justify-between">
+                        <p class="text-[18px] font-light text-[#03071299]">Departure Time</p>
+                        <p class="text-[18px]">9:00 PM</p>
+                    </div>
+                    <div class="flex justify-around">
+                        <button class="btn bg-[#0307120D] p-1">Boarding Point - Laxmipur</button>
+                        <button class="btn bg-[#0307120D] p-1">Dropping Point - Bogura</button>
+                        <button class="btn bg-[#0307120D] p-1">Est. Time - 11 Hour</button>
+                    </div>
+                </div>
+            </div>
+        </section>
+    </main>
+    <footer>
+
+    </footer>
 </body>
+
 </html>
