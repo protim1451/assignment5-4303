@@ -37,8 +37,8 @@
             <div class="flex gap-7 flex-col justify-center items-center">
                 <h1 class="text-5xl text-white font-bold text-center pt-16">End-to-End Travel with <br><span
                         class="text-green-500">P Paribahan</span></h1>
-                <p class="text-white text-[18px] text-center">Yes, you can run unit tests and view the results
-                    directly within the app. <br>The integrated testing features allow for a streamlined .</p>
+                <p class="text-white text-[18px] text-center"> bus ticketing system streamlines passenger boarding, fare collection, and seat reservation, <br>
+                    enhancing efficiency and convenience for travelers.</p>
                 <button class="btn bg-[#1DD100]"> <a href="">Buy Tickets</a></button>
             </div>
         </div>
@@ -166,11 +166,6 @@
                     <div class="">
                         <h4 class="text-2xl">Select Your Seat</h4>
                         <div class="mt-3">
-                            <!-- <tr class="text-left p-2 ">
-                                <th>Seat <span id="selected-seat-number" class="bg-green-500 text-white">0</span></th>
-                                <th>Class</th>
-                                <th>Price</th>
-                            </tr> -->
                             <div class="flex justify-between">
                                 <div class="seat">Seat <span id="selected-seat-number">0</span></div>
                                 <div class="class">Class</div>
@@ -186,7 +181,7 @@
                             <div class="w-full">
                                 <input id="coupon" class="mt-3" type="text" placeholder="Have any Coupon?"
                                     class="input input-bordered w-full max-w-xs" />
-                                <button id="coupon-btn" class="btn bg-green-500 text-white">Apply</button>
+                                <button onclick="updateGrandTotal('coupon-btn')" id="coupon-btn" class="btn bg-green-500 text-white">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-semibold">Grand Total</p>
