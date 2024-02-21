@@ -5,6 +5,7 @@
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Bus Ticketing</title>
+    <link rel="stylesheet" href="style.css">
     <!-- Daisy UI -->
     <link href="https://cdn.jsdelivr.net/npm/daisyui@4.6.0/dist/full.min.css" rel="stylesheet" type="text/css" />
     <script src="https://cdn.tailwindcss.com"></script>
@@ -38,7 +39,7 @@
                         class="text-green-500">P Paribahan</span></h1>
                 <p class="text-white text-[18px] text-center">Yes, you can run unit tests and view the results
                     directly within the app. <br>The integrated testing features allow for a streamlined .</p>
-                <button class="btn bg-[#1DD100]">Buy Tickets</button>
+                <button class="btn bg-[#1DD100]"> <a href="">Buy Tickets</a></button>
             </div>
         </div>
     </header>
@@ -111,11 +112,56 @@
                             <button class="btn bg-[#0307120D] p-1">Est. Time - 11 Hour</button>
                         </div>
                     </div>
-                    <div class="flex flex-col gap-3 justify-center items-center w-1/3 border-l-2 border-green-500 border-dashed ml-8">
+                    <div class="flex flex-col gap-3 justify-center items-center w-1/4 border-l-2 border-green-500 border-dashed ml-8">
                         <img src="images/fare.png" alt="">
                         <h3 class="text-3xl font-semibold">550 Taka</h3>
                         <p class="text-xl font-light">Per Seat</p>
                     </div>
+                </div>
+            </div>
+        </section>
+        <section class="layout-container mt-12 mx-32">
+            <div>
+                <div>
+                    <h4 class="text-2xl">Select Your Seat</h4>
+                    <div class=" mt-5 flex justify-between">
+                        <div class="flex">
+                            <img src="images/seat-gray.png" alt="">
+                            <p class="text-[18px] text-[#030712] font-light">Available</p>
+                        </div>
+                        <div class="flex">
+                            <img src="images/seat-green-filled.png" alt="">
+                            <p class="text-[18px] text-green-500 font-light">Selected</p>
+                        </div>
+                    </div>
+
+                </div>
+                <div>
+                    <img width="60px" height="40px" src="images/wheel.jpg" alt="" style="float: right;"> <br>
+                    <div class="flex justify-between row1-layout mt-20">
+                        <div class="flex gap-10">
+                            <kbd id="A1" class="kbd">A1</kbd>
+                            <kbd id="A2" class="kbd">A2</kbd>
+                        </div>
+                        <div class="flex gap-10">
+                            <kbd id="A3" class="kbd">A3</kbd>
+                            <kbd id="A4" class="kbd">A4</kbd>
+                        </div>
+                    </div>
+                    <div class="flex justify-between row1-layout mt-8">
+                        <div class="flex gap-10">
+                            <kbd id="B1" class="kbd">B1</kbd>
+                            <kbd id="B2" class="kbd">B2</kbd>
+                        </div>
+                        <div class="flex gap-10">
+                            <kbd id="B3" class="kbd">B3</kbd>
+                            <kbd id="B4" class="kbd">B4</kbd>
+                        </div>
+                    </div>
+                </div>
+                <div>
+                    <h4 class="text-2xl">Select Your Seat</h4>
+                    
                 </div>
             </div>
         </section>
