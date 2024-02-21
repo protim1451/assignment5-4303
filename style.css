@@ -1,3 +1,9 @@
 .kbd{
     width: 110px;
 }
+
+.selected-seats{
+    display: flex;
+    padding: 10px;
+    justify-content: space-between;
+}
