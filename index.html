@@ -37,7 +37,8 @@
             <div class="flex gap-7 flex-col justify-center items-center">
                 <h1 class="text-5xl text-white font-bold text-center pt-16">End-to-End Travel with <br><span
                         class="text-green-500">P Paribahan</span></h1>
-                <p class="text-white text-[18px] text-center"> bus ticketing system streamlines passenger boarding, fare collection, and seat reservation, <br>
+                <p class="text-white text-[18px] text-center"> bus ticketing system streamlines passenger boarding, fare
+                    collection, and seat reservation, <br>
                     enhancing efficiency and convenience for travelers.</p>
                 <button class="btn bg-[#1DD100]"> <a href="">Buy Tickets</a></button>
             </div>
@@ -160,6 +161,47 @@
                                 <kbd id="B4" class="kbd">B4</kbd>
                             </div>
                         </div>
+                        <div class="flex justify-between row1-layout mt-8">
+                            <div class="flex gap-10">
+                                <kbd id="A1" class="kbd"> C1</kbd>
+                                <kbd id="A2" class="kbd">C2</kbd>
+                            </div>
+                            <div class="flex gap-10">
+                                <kbd id="C3" class="kbd">C3</kbd>
+                                <kbd id="C4" class="kbd">C4</kbd>
+                            </div>
+                        </div>
+                        <div class="flex justify-between row2-layout mt-8">
+                            <div class="flex gap-10">
+                                <kbd id="D1" class="kbd">D1</kbd>
+                                <kbd id="D2" class="kbd">D2</kbd>
+                            </div>
+                            <div class="flex gap-10">
+                                <kbd id="D3" class="kbd">D3</kbd>
+                                <kbd id="D4" class="kbd">D4</kbd>
+                            </div>
+                        </div>
+                        <div class="flex justify-between row2-layout mt-8">
+                            <div class="flex gap-10">
+                                <kbd id="E1" class="kbd">E1</kbd>
+                                <kbd id="E2" class="kbd">E2</kbd>
+                            </div>
+                            <div class="flex gap-10">
+                                <kbd id="E3" class="kbd">E3</kbd>
+                                <kbd id="E4" class="kbd">E4</kbd>
+                            </div>
+                        </div>
+                        <div class="flex justify-between row2-layout mt-8">
+                            <div class="flex gap-10">
+                                <kbd id="F1" class="kbd">F1</kbd>
+                                <kbd id="F2" class="kbd">F2</kbd>
+                            </div>
+                            <div class="flex gap-10">
+                                <kbd id="F3" class="kbd">F3</kbd>
+                                <kbd id="F4" class="kbd">F4</kbd>
+                            </div>
+                        </div>
+
                     </div>
                 </div>
                 <div class="w-2/3">
@@ -167,7 +209,8 @@
                         <h4 class="text-2xl">Select Your Seat</h4>
                         <div class="mt-3">
                             <div class="flex justify-between">
-                                <div class="seat">Seat <span id="selected-seat-number">0</span></div>
+                                <div class="seat">Seat <span id="selected-seat-number"
+                                        class="bg-green-500 text-white">0</span></div>
                                 <div class="class">Class</div>
                                 <div class="price">Price</div>
                             </div>
@@ -181,7 +224,8 @@
                             <div class="w-full">
                                 <input id="coupon" class="mt-3" type="text" placeholder="Have any Coupon?"
                                     class="input input-bordered w-full max-w-xs" />
-                                <button onclick="updateGrandTotal('coupon-btn')" id="coupon-btn" class="btn bg-green-500 text-white">Apply</button>
+                                <button onclick="updateGrandTotal('coupon-btn')" id="coupon-btn"
+                                    class="btn bg-green-500 text-white">Apply</button>
                             </div>
                             <div class="flex justify-between">
                                 <p class="font-semibold">Grand Total</p>
@@ -215,7 +259,24 @@
                                 </label>
                             </div>
                             <div class="mt-3">
-                                <button class="btn btn-block bg-green-500  text-white">Next</button>
+                                <!-- <button class="btn btn-block bg-green-500  text-white">Next</button> -->
+                                <!-- Open the modal using ID.showModal() method -->
+                                <button class="btn btn-block bg-green-500  text-white" onclick="my_modal_1.showModal()">Next</button>
+                                <dialog id="my_modal_1" class="modal">
+                                    <div class="modal-box flex flex-col gap-4 justify-center items-center">
+                                        <img width="100px" height="100px" src="images/success.png" alt="">
+                                        <h3 class="font-bold text-lg text-green-500 uppercase text-center">Success</h3>
+                                        <p class="py-4 text-center">Thank you for Booking Our Bus Seats. 
+                                            We are working hard to find the best service and deals for you. 
+                                            Shortly you will find a confirmation in your email.</p>
+                                        <div class="modal-action">
+                                            <form method="dialog">
+                                                <!-- if there is a button in form, it will close the modal -->
+                                                <button class="btn btn-wide bg-green-500 rounded-2xl">Continue</button>
+                                            </form>
+                                        </div>
+                                    </div>
+                                </dialog>
                             </div>
                         </div>
                     </div>

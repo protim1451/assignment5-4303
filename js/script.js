@@ -10,16 +10,32 @@ const totalSeat = getConvertedValue('seats-available');
 
 const allSeat = document.getElementsByClassName('kbd');
 //console.log(allSeat);
-function setBackgroundColorById(elementId){
-    const element = document.getElementById(elementId);
-    element.classList.add('bg-green-500');
-}
+// function setBackgroundColorById(elementId){
+//     const element = document.getElementById(elementId);
+//     element.classList.add('bg-green-500');
+// }
 for(const seat of allSeat){
     //console.log(seat);
     seat.addEventListener("click", function(event){
-       // console.log(event.target.innerText); 
+       
         const seat = event.target.innerText;
         const selectedContainer = document.getElementById('selected-seat-container');
+
+        event.target.removeEventListener("click", this);
+
+        //event.target.removeEventListener(null);
+        //event.target.disabled = true;
+        event.target.classList.add('disabled');
+
+        
+        const firstCount = getConvertedValue("selected-seat-number");
+        if(firstCount+1 > 4){
+            alert("You can not select More than 4 seats");
+            return;
+        }
+
+        event.target.classList.add('bg-green-500');
+
         const div = document.createElement("div");
         div.classList.add("selected-seats");
 
@@ -38,6 +54,12 @@ for(const seat of allSeat){
 
         updateTotalCost(550);
         updateGrandTotal();
+
+        const totalSeat = getConvertedValue('seats-available');
+        document.getElementById("seats-available").innerText = totalSeat-1;
+        const selectedSeats = getConvertedValue("selected-seat-number");
+        
+        document.getElementById("selected-seat-number").innerText = selectedSeats+1;
     })
 }
 
